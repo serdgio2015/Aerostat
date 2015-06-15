@@ -1,0 +1,105 @@
+
+.instructor-team {
+	background: #fff;
+	text-align: center;
+	padding-top: 100px;
+
+	.h2-title__h2-underline {
+		margin: 12px auto;
+	}
+
+	&__row {
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__column {
+		margin: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		@media (max-width: 768px) {
+			width: 50%;
+		}
+
+		@media (max-width: 360px) {
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
+	}
+
+	
+	&__wrapper--pilot,
+	&__wrapper--dispatcher,
+	&__wrapper--mechanic {
+		position: relative;
+		display: inline-block;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: -20px;
+			width: 73px;
+			height: 73px;
+			border-radius: 50%;
+			background: url(../images/sprite4.png) no-repeat;
+			background-position: 0 0;
+
+			@media (max-width: 360px) {
+				display: none;
+			}
+		}
+	}
+
+	&__wrapper--dispatcher::after {
+		background-position: -73px 0;
+	}
+
+	&__wrapper--mechanic::after {
+		background-position: -146px 0;
+	}
+
+	&__image {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto 25px;
+
+		@media (max-width: 360px) {
+			width: 90px;
+			height: 90px;
+			margin: 0 auto 0;
+		}
+	}
+
+	&__text {
+
+		@media (max-width: 360px) {
+			text-align: left;
+			padding-left: 20px;
+		}
+	}
+
+	&__name {
+		font-family: @font-family-1-medium;
+		font-size: @font-size-instructor-team-name;
+		color: @font-color-gray;
+		display: block;
+
+		@media (max-width: 360px) {
+			font-size: @font-size-instructor-team-name-xs;
+		}
+	}
+
+	&__role {
+		font-family: @font-family-1-regular;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+		display: block;
+	}
+}

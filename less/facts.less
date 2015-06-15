@@ -1,0 +1,69 @@
+
+.facts {
+	min-height: 375px;
+	background: url(../images/bg-picture-box.jpg);
+	background-size: cover;
+	background-position: 0 -200px;
+
+	@media (max-width: 768px) {
+		background-position: 0 0;
+	}
+
+	&__row {
+		justify-content: center;
+
+		@media (max-width: 360px) {
+			flex-flow: column;
+		}
+	}
+} 
+
+.facts-item {
+	width: 20%;
+	text-align: center;
+	padding: 70px 0;
+
+	@media (max-width: 360px) {
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__image {
+		width: 160px;
+		height: 160px;
+		box-shadow: 0 0 0 6px #fff inset;
+		text-align: center;
+		border-radius: 50%;
+		margin: 0 auto;
+
+		@media (max-width: 360px) {
+			width: 90px;
+			height: 90px;
+		}
+	}
+
+	&__number {
+		color: #fff;
+		font-family: @font-family-1-medium;
+		font-size: @font-size-facts-image;
+		line-height: 160px;
+
+		@media (max-width: 360px) {
+			font-size: @font-size-facts-image-xs;
+			line-height: 90px;
+		}
+	}
+
+	&__label {
+		color: #fff;
+		font-family: @font-family-1-medium;
+		font-size: @font-size-facts-label;
+
+		@media (max-width: 360px) {
+			text-align: left;
+			font-size: @font-size-facts-label-xs;
+			margin-left: 25px;
+		}
+	}
+}

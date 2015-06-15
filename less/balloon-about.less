@@ -1,0 +1,51 @@
+
+.balloon-about {
+	background: #fff;
+
+	&__row {
+		display: flex;
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__video-title {
+		position: relative;
+		font-family: @font-family-1-medium;
+		font-size: @font-size-h2;
+		color: @font-color-gray;
+	}
+
+	&__textarea {
+		width: 33%;
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+	&__videoarea {
+		width: 67%;
+
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+
+		@media (max-width: 360px) {
+			display: none;
+		}
+	}
+
+	&__paragraf {
+		margin: 24px 0;
+		font-family: @font-family-1-regular;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+	}
+
+	&__video {
+		margin-bottom: 120px;
+	}
+}
+

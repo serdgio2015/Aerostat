@@ -1,0 +1,60 @@
+
+.countdown {
+	background-color: rgba(0,0,0,.4);
+
+	&__row {
+		@height-countdown: 100px;
+		display: flex;
+		min-height: @height-countdown;
+		align-items: center;
+		margin-top: -@height-countdown;
+
+		@media (max-width: 360px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__title {
+		font-family: @font-family-1-medium;
+	    font-size: @font-size-h2;
+	    color: #fff;
+
+	    @media (max-width: 360px) {
+			font-size: @font-size-h3;
+		}
+	}
+
+	&__wrapper {
+		margin-left: auto;
+
+		@media (max-width: 360px) {
+			margin: auto;
+		}
+	}
+}
+
+#CDT .number-wrapper {
+	margin-left: 10px;
+	margin-right: 10px;
+    position: relative;
+}
+
+.number {
+    font-family: @font-family-1-medium;
+    font-size: @font-size-h2;
+    color: #fff;
+
+    @media (max-width: 360px) {
+		font-size: @font-size-h3;
+	}
+} 
+
+.namedata {
+	font-family: @font-family-1-medium;
+    font-size: @font-size-h3;
+    color: #fff;
+
+    @media (max-width: 360px) {
+		font-size: @font-size-base;
+	}
+}

@@ -1,0 +1,175 @@
+
+.order {
+	@media (max-width: 360px) {
+		display: none;
+	}
+}
+
+.order-box__pay {
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		display: block;
+		height: 30px;
+		background: @color-light-gray;
+		color: @font-color-gray;
+		text-decoration: none;
+		text-align: center;
+		line-height: 35px;
+		font-family: @font-family-1-regular;
+		font-size: @font-size-base;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		&--hover {
+			color: @font-color-gray;
+		}
+
+		&--active {
+			color: #fff;
+			background: @color-red;
+		}
+	}
+
+	&__item:first-child {
+		margin-left: 0;
+	}
+
+	&__paragraf {
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+
+	&__text--inside {
+		display: block;
+		font-family: @font-family-1-italic;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+		margin-top: 24px;
+		margin-bottom: 12px;
+	}
+}
+
+
+.order {
+	background: #fff;
+
+	&__row {
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__paragraf {
+		font-family: @font-family-1-italic;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+		margin-top: 24px;
+		margin-bottom: 12px;
+	}
+}
+
+.order-box__value,
+.order-box__form,
+.order-box__faq,
+.order-box__pay {
+	width: 50%;
+	padding: 30px 15px;
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+
+	@media (max-width: 360px) {
+		padding: 10px;
+	}
+}
+
+.order-box__value {
+
+	@media (max-width: 768px) {
+		order: 0;
+	}
+}
+
+.order-box__form {
+
+	@media (max-width: 768px) {
+		order: 1;
+		background: url('../images/bg-form.jpg') 0 0 no-repeat;
+	}
+
+	@media (max-width: 360px) {
+		order: 1;
+		background: #fff;
+	}
+}
+
+.order-box__faq {
+
+	@media (max-width: 768px) {
+		order: 3;
+	}
+}
+
+.order-box__pay {
+
+	@media (max-width: 768px) {
+		order: 2;
+	}
+}
+
+
+.order-mobile {
+	display: none;
+
+	@media (max-width: 360px) {
+		display: block;
+	}
+
+	&__title {
+		font-family: @font-family-1-bold;
+		font-size: @font-size-h3; 
+		color: @font-color-gray;
+		margin-top: 50px;
+	}
+
+	&__text {
+		display: block;
+		font-family: @font-family-1-regular;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+		margin-top: 24px;
+		margin-bottom: 12px;
+	}
+}
+
+.tel,
+.mail {
+	font-family: @font-family-1-italic;
+	color: @font-color-gray;
+}
+
+.tel {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.mail {
+
+	&:hover {
+		text-decoration: none;
+	}
+}

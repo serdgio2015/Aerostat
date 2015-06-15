@@ -1,0 +1,75 @@
+
+.btn-ditails {
+	position: relative;
+	font-family: @font-family-1-regular;
+	color: #fff;
+	text-decoration: none;
+	font-size: @font-size-base;
+	border: 1px solid #fff;
+	padding: 5px 12px;
+
+	&:hover {
+		background: rgba(255, 255, 255, 1);	
+		color: #366c9d;
+	}
+
+	@media (max-width: 360px) {
+		display: none;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: @font-size-base+45;
+		left: 50%;
+		margin-left: -9px;
+		width: 18px;
+		height: 29px;
+		display: block;
+		background: url('../images/bottom-arrow.png') 0 0 no-repeat;
+	}
+}
+
+.btn-form--senging {
+	display: inline-block;
+	line-height: 40px;
+	background: @color-blue;
+	color: #fff;
+	font-family: @font-family-1-medium;
+	font-size: @font-size-base;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 4px;
+	margin-left: auto;
+}
+
+.social {
+	margin-left: -50px;
+
+	.btn-social--vk,
+	.btn-social--facebook,
+	.btn-social--instagram {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		background: url('../images/sprite6.png') -30px -50px no-repeat;
+	}
+
+	.btn-social--facebook {
+		background: url('../images/sprite6.png') -60px -50px no-repeat;
+	}
+
+	.btn-social--instagram {
+		background: url('../images/sprite6.png') -90px -50px no-repeat;
+	}
+
+	@media (max-width: 768px) {
+		margin-left: auto;
+	}
+
+	@media (max-width: 360px) {
+		width: 100%;
+		margin: auto;
+	}
+}
+

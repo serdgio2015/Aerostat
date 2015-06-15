@@ -1,0 +1,84 @@
+
+.page-presentation {
+	padding-top: 35px;
+
+	.row-flex--gift,
+	.row-flex--tour,
+	.row-flex-title,
+	.row-flex--experience,
+	.row-flex--walk {
+		display: flex;
+		order: 1;
+	}
+
+	.row-flex--tour {
+
+		@media (max-width: 768px) {
+			order: 0;
+		}
+	}
+
+	.row-flex--experience {
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+
+	&__link--gift,
+	&__link--tour,
+	&__link--experience,
+	&__link--walk {
+		color: #fff;
+		text-decoration: none;
+		line-height: 70px;
+		font-family: @font-family-1-medium;
+		font-size: @font-size-base*1.3;
+
+		@media (max-width: 360px) {
+			display: none;
+		}
+	}
+
+	&__link--gift {
+		margin-left: auto;
+		margin-right: 15%;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__link--tour {
+		margin-left: 15%;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__link--walk {
+		margin-left: auto;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.page-title {
+	color: #fff;
+	font-family: @font-family-1-medium;
+	font-size: @font-size-h1;
+	line-height: @font-size-h1*1.2;
+	margin: auto;
+	text-align: center;
+	
+	@media (max-width: 768px) {
+		font-size: @font-size-h1-sm;
+		line-height: @font-size-h1-sm*1.2;
+	}
+
+	@media (max-width: 360px) {
+		font-size: @font-size-h1-xs;
+		line-height: @font-size-h1-xs*1.2;
+	}
+}

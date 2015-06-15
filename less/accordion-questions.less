@@ -1,0 +1,51 @@
+
+.accordion-questions {
+
+	&__accordion-link {
+		display: inline-block;
+		position: relative;
+		font-family: @font-family-1-regular;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+		margin-left: 20px;
+		text-decoration: none;
+		border-bottom: 1px dashed @font-color-gray;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: -20px;
+			margin-top: -5px;
+			width: 10px;
+			height: 10px;
+			background: url(../images/sprite3.png) no-repeat;
+			background-position: -10px 0;
+		}
+
+		&--active {
+			border-bottom: none;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: -20px;
+				margin-top: -5px;
+				width: 10px;
+				height: 10px;
+				background: url(../images/sprite3.png) no-repeat;
+				background-position: 0 0;
+			}
+		}
+	}
+
+	&__accordion-paragraf {
+		font-family: @font-family-1-italic;
+		font-size: @font-size-small;
+		color: @font-color-gray;
+		padding: 10px 60px  10px 40px;
+		display: none;
+	}
+}

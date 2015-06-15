@@ -1,0 +1,129 @@
+
+.row-flex--adress {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 130px;
+	padding-bottom: 30px;
+}
+
+.airport-adress {
+	width: 100%;
+	padding-bottom: 30px;
+
+	&__title {
+		position: relative;
+		font-family: @font-family-1-medium;
+		color: @font-color-gray;
+		font-size: @font-size-h1-adress;
+		text-align: center;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -70px;
+			left: 50%;
+			margin-left: -25px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: @color-dark-blue url('../images/sprite6.png') 0 0 no-repeat;
+			border-radius: 4px;
+		}
+	}
+
+	&__ditails {
+		font-family: @font-family-1-italic;
+		color: @font-color-gray;
+		font-size: @font-size-base;
+		text-align: center;
+	}
+}
+
+.city-adress {
+
+	&__title {
+		position: relative;
+		font-family: @font-family-1-medium;
+		color: @font-color-gray;
+		font-size: @font-size-h2-adress;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: -70px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: url('../images/sprite6.png') -50px 0 no-repeat;
+		}
+	}
+
+	&__city--peterburg,
+	&__city--vsevologsk,
+	&__email {
+		width: 33.333%;
+		padding-left: 70px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&__city--peterburg,
+	&__city--vsevologsk {
+		
+		@media (max-width: 768px) {
+			width: 50%;
+		}
+
+		@media (max-width: 360px) {
+			width: 100%;
+		}
+	}
+
+	&__email {
+		
+		@media (max-width: 768px) {
+			display: flex;
+			width: 100%;
+		}
+
+		@media (max-width: 360px) {
+			flex-flow: column;
+		}
+	}
+
+	&__ditails {
+		font-family: @font-family-1-italic;
+		color: @font-color-gray;
+		font-size: @font-size-p-city-adress;
+	}
+
+	&__number {
+		font-family: @font-family-1-medium;
+		color: @font-color-gray;
+		font-size: @font-size-h1-adress;
+	}
+
+	&__email__link {
+		position: relative;
+		font-family: @font-family-1-regular;
+		color: @font-color-gray;
+		font-size: @font-size-h2-adress;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: -50px;
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: url('../images/sprite6.png') 0 -50px no-repeat;
+		}
+	}
+
+	&__email__link:hover {
+		text-decoration: none;
+	}
+}

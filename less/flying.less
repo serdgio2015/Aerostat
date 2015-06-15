@@ -1,0 +1,29 @@
+
+.flying {
+	@height-section: 700px;
+	background: url(../images/bg-flying.jpg) 0 0 no-repeat;
+	background-size: cover;
+	min-height: @height-section;
+	text-align: center;
+
+	.h2-title__h2-underline {
+		margin: 12px auto;
+	}
+
+	&__inner {
+		height: @height-section;
+	}
+
+	&__steps {
+		display: flex;
+		justify-content: space-around;
+		height: 310px;
+		background: url(../images/flying-line.png) no-repeat;
+		background-size: contain;
+		background-position: bottom;
+
+		@media (max-width: 360px) {
+			flex-flow: column;
+		}
+	}
+}

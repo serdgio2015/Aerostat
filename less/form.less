@@ -1,0 +1,86 @@
+
+.form {
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 5px;
+
+	@media (max-width: 360px) {
+		padding: 25px 0;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		@media (max-width: 360px) {
+			flex-wrap: wrap;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	&__label {
+		position: relative;
+		width: 160px;
+		font-family: @font-family-1-regular;
+		font-size: @font-size-base;
+		color: @font-color-gray;
+
+		@media (max-width: 360px) {
+			width: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__input--track,
+	&__input--count,
+	&__input--name,
+	&__input--tel {
+		position: relative;
+		width: 320px;
+		height: 40px;
+		border: 1px solid @color-light-gray-input;
+		border-radius: 4px;
+		outline: none;
+		margin-left: auto;
+		padding-left: 35px;
+		padding-right: 35px;
+
+		@media (max-width: 360px) {
+			width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		&:focus {
+			border: 2px solid @color-blue;
+		}
+	}
+
+	&__value {
+		font-family: @font-family-1-bold;
+		font-size: @font-size-base;
+
+		@media (max-width: 360px) {
+			display: none;
+		}
+	}
+
+	&__price {
+		font-family: @font-family-1-medium;
+		font-size: @font-size-form-price;
+		color: @color-light-red;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		@media (max-width: 360px) {
+			padding-left: 0;
+			padding-right: 0;
+			font-size: @font-size-form-price-xs;
+		}
+	}
+}
+
